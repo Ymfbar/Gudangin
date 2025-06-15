@@ -58,7 +58,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
     <div class="card login-card shadow-lg">
         <div class="card-body p-5">
-            <h2 class="card-title text-center mb-4">Login Gudangin</h2>
+            <h2 class="card-title text-center mb-4">Gudangin</h2>
             <?php if ($error): ?>
                 <div class="alert alert-danger"><?= $error ?></div>
             <?php endif; ?>
