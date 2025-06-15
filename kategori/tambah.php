@@ -2,6 +2,7 @@
 include('../auth/check_login.php');
 include('../config/db.php');
 
+// Logika untuk memproses data saat form disubmit
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $nama = $_POST['nama'];
     
@@ -19,8 +20,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     exit;
 }
 
+// Memuat template header
 include('../templates/header.php');
 ?>
+
+<a href="index.php" class="btn btn-outline-secondary mb-3">
+    <i class="bi bi-arrow-left"></i> Kembali
+</a>
 
 <h2>Tambah Kategori Baru</h2>
 <hr>
@@ -32,3 +38,16 @@ include('../templates/header.php');
                 <label for="nama" class="form-label">Nama Kategori</label>
                 <input type="text" name="nama" class="form-control" id="nama" placeholder="e.g., Makanan Ringan" required>
             </div>
+
+            <button type="submit" class="btn btn-primary">
+                <i class="bi bi-plus-circle"></i> Tambah Kategori
+            </button>
+            <a href="index.php" class="btn btn-secondary">Batal</a>
+        </form>
+    </div>
+</div>
+
+<?php
+// Memuat template footer
+include('../templates/footer.php'); 
+?>

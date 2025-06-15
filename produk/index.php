@@ -1,5 +1,6 @@
 <?php
 include('../auth/check_login.php');
+include('../templates/header.php');
 include('../config/db.php');
 
 $q = mysqli_query($conn, "SELECT produk.*, kategori.nama_kategori 
