@@ -49,4 +49,11 @@ $result = mysqli_query($conn, "SELECT * FROM kategori ORDER BY nama_kategori ASC
     </div>
 </div>
 
+<div class="mt-3">
+    <a href="../index.php" class="btn btn-secondary">
+        <i class="bi bi-arrow-left"></i> Kembali ke Dashboard
+    </a>
+</div>
+
+
 <?php include('../templates/footer.php'); ?>
