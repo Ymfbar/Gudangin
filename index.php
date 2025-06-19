@@ -1,5 +1,13 @@
 <?php
-include('auth/check_login.php');
+// index.php
+session_start(); // Start the session if it hasn't been started already
+
+if (!isset($_SESSION['login'])) { // Check if the user is not logged in
+    header("Location: auth/login.php"); // Redirect to the login page
+    exit;
+}
+
+include('auth/check_login.php'); // This will now only be included if the user is logged in
 include('templates/header.php');
 ?>
 
