@@ -49,7 +49,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             height: 100vh;
             background-color: #f8f9fa;
             /* Added background image properties */
-            background-image: url('../assets/images/gudanglogin.jpg'); /* Example: random image of a warehouse */
+            background-image: url('../assets/css/images/gudanglogin.jpg'); /* Example: random image of a warehouse */
             background-size: cover; /* Cover the entire background */
             background-position: center; /* Center the background image */
             background-repeat: no-repeat; /* Do not repeat the image */
