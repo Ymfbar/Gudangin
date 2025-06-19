@@ -1,11 +1,5 @@
 body {
     background-color: #f8f9fa;
-    background-image: url('../assets/css/images/gudangindex.jpg'); 
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
 }
 
 .dashboard-card {
@@ -14,14 +8,4 @@ body {
 
 .dashboard-card:hover {
     transform: scale(1.05);
-}
-
-/* Tambahan untuk membuat area konten (Jumbotron/P-5) lebih terbaca di atas background */
-.p-5 { /* Ini merujuk pada div dengan class p-5 di index.php */
-    background-color: rgba(255, 255, 255, 0.85) !important; /* Semi-transparan putih */
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15); /* Tambah bayangan agar menonjol */
-}
-
-.card { /* Untuk card produk dan kategori */
-    background-color: rgba(255, 255, 255, 0.95); /* Sedikit lebih solid dari jumbotron */
 }
