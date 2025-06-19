@@ -43,19 +43,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background: url('../assets/gudanglogin.jpg') no-repeat center center fixed;
-            background-size: cover;
-            min-height: 100vh;
-
             display: flex;
             align-items: center;
             justify-content: center;
             height: 100vh;
             background-color: #f8f9fa;
+            /* Added background image properties */
+            background-image: url('https://source.unsplash.com/random/1920x1080/?warehouse,inventory'); /* Example: random image of a warehouse */
+            background-size: cover; /* Cover the entire background */
+            background-position: center; /* Center the background image */
+            background-repeat: no-repeat; /* Do not repeat the image */
         }
         .login-card {
             width: 100%;
             max-width: 400px;
+            /* Optional: Add a slight background to the card for better readability */
+            background-color: rgba(255, 255, 255, 0.9); /* White with 90% opacity */
+            border-radius: 0.5rem;
         }
     </style>
 </head>
