@@ -13,7 +13,7 @@ include('templates/header.php');
 
 <div class="p-5 mb-4 bg-light rounded-3">
     <div class="container-fluid py-5">
-        <h1 class="display-5 fw-bold">Dashboard</h1>
+        <h1 class="display-5 fw-bold">Gudangin</h1>
         <p class="col-md-8 fs-4">Selamat datang di sistem manajemen Gudangin. Kelola produk dan kategori Anda dengan mudah.</p>
     </div>
 </div>
